@@ -7,9 +7,9 @@ val_L = 0
 val_C = 0
 val_R = 0
 while True:
-    val_L = pin3.read_digital()
-    val_C = pin4.read_digital()
-    val_R = pin10.read_digital()
+    val_L = pin4.read_digital()
+    val_C = pin3.read_digital()
+    val_R = pin2.read_digital()
     if val_C == 0:
         if val_L == 0 and val_R == 1:
             mecanumCar.Motor_Upper_L(1, 80)
